@@ -1,0 +1,291 @@
+*{
+  padding:0;
+  margin:0;
+}
+
+header{
+  background-color: rgba(0,0,0,0.5);
+  border-bottom-style: solid;
+  border-color: grey;
+  justify-items: center;
+  align-items: center;
+  /* hur menyn ska se ut */
+}
+body{
+  background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+  linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+  url("https://wallpapercave.com/wp/wp9116512.jpg"), black;
+  background-size: cover;
+  backdrop-filter: blur(2px) saturate(70%);
+/* hur bakgrunden ska se ut */
+}
+#rubrik{
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 500;
+  font-size: 300%;
+  color: white;
+  padding: 10px;
+  margin-left: 1%;
+  /* hur rubriken ska se ut */
+}
+button{
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  border: none;
+  padding: 13px;
+  font-size: 20px;
+  font-family: 'Rajdhani', sans-serif;
+  border-radius: 5px;
+  cursor: pointer;
+  /* hur alla knappar i menyn ska se ut */
+}
+.dropbtn{
+  cursor: default;
+}
+.dropbtn:active{
+  color: black;
+}
+button:link {
+  text-decoration: none;
+  color: #cccccc;
+}
+button:visited {
+  text-decoration: none;
+  color: #cccccc;
+}
+button:hover {
+  background-color: #cccccc;
+}
+button:active {
+  color: white;
+}
+/* vad som händer när man håller musen över/klickar på knapparna */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a:hover {background-color: #cccccc;}
+
+.dropdown:hover .dropdown-content {display: block;
+border-radius: 5px;
+}
+
+.dropdown:hover .dropbtn {background-color: #cccccc;}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: 'Rajdhani', sans-serif;
+  border-radius: 5px;
+}
+.dropdown-content a:active{
+  color: white;
+}
+/* hur dropdown menyn ska se ut */
+.content{
+  justify-items: center;
+  align-items: center;
+}
+#bild1{
+  width: 100%;
+  opacity: 0.6;
+}
+.netflix{
+  width: 75%;
+  align-self: center;
+}
+.youtube{
+  width: 75%;
+}
+.wiki{
+  width: 80%;
+  margin-top: 10%;
+}
+.info:hover{
+    background-color:#000;
+    opacity:0.7;
+}
+/* hur alla länkbilder ska se ut */
+.inledning{
+  font-size: 200%;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 300;
+  color: white;
+  backdrop-filter: blur(10px) saturate(70%);
+  border-left-style: solid;
+  border-color: black;
+  border-width: 7px;
+  padding-left: 15px;
+}
+/* hur texten (citatet) ska se ut */
+
+.content2{
+  justify-content: center;
+  align-items: center;
+}
+#titel1{
+  font-size: 225%;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 500;
+  color: white;
+  padding-left: 5%;
+}
+#bild2{
+  width: 100%;
+}
+#bild3{
+  width: 75%;
+  opacity: 0.5;
+}
+#bild4{
+  width: 100%;
+}
+#bild5{
+  width: 60%;
+}
+#bild6{
+  width: 90%;
+}
+/* hur alla bilder på den andra sidan ska se ut (samt titeln)*/
+.citat{
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 110%;
+  font-weight: 100;
+  color: white;
+  padding: 1%;
+  backdrop-filter: blur(10px) saturate(70%);
+}
+/* hur citatet på sida 2 ska se ut*/
+.lista{
+  font-size: 150%;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 100;
+  color: white;
+  background-color: rgba(255,255,255, 0.5);
+  text-align: center;
+  position: sticky;
+  top: 0;
+  align-self: start;
+}
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+/* hur lista ska se ut och hur länkarna ska se ut och bete sig */
+.text{
+  font-size: 175%;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 100;
+  color: white;
+}
+/* hur generell text ska se ut */
+#bojack-text{
+  background-color: rgba(255,255,255,0.2);
+  border-left-style: solid;
+  border-color: white;
+  border-width: 7px;
+  padding-left: 15px;
+  margin-left: 20%;
+}
+/* hur inledningstexten till BoJack ska se ut */
+.del{
+  text-align: center;
+  font-size: 225%;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 500;
+  color: white;
+}
+/* hur rubrikerna till de olika delarna av fakta ska se ut */
+.text2{
+  font-size: 150%;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 100;
+  color: white;
+  background-color: rgba(255,255,255,0.2);
+  border-left-style: solid;
+  border-color: white;
+  border-width: 7px;
+  padding-left: 15px;
+  margin-left: 1%;
+}
+#alejandro{
+  width: 50%;
+}
+@media screen and (max-width: 1150px){
+  #rubrik{
+  font-size: 250%;
+}
+  .inledning{
+    font-size: 175%;
+  }
+  #bild3{
+    display: none;
+  }
+  #citat1{
+    font-size: 125%;
+  }
+  .text2{
+    background-color: rgba(0,0,0,0.35);
+  }
+}
+@media screen and (max-width: 840px){
+  #rubrik{
+    font-size: 350%;}
+  .inledning{
+    font-size: 250%;
+  }
+  #bojack-text{
+    margin-left: 15px;
+  }
+}
+@media screen and (max-width: 620px){
+    #rubrik{
+      font-size: 350%;
+    }
+    .inledning{
+      font-size: 200%;
+    }
+    #citat1{
+      font-size: 100%;
+    }
+    .text2{
+      font-size: 125%;
+    }
+  }
+@media screen and (max-width: 480px){
+  #rubrik{
+    font-size: 300%;}
+  .inledning{
+    font-size: 150%;
+    }
+  #bojack-text{
+    font-size: 125%;
+    margin: 5%;
+    margin-left: 0;
+  }
+}
+/* hur sidan beter sig/ser ut vid olika enheter/storlekar */
